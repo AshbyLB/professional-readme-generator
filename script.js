@@ -6,8 +6,11 @@ questions
       type: "input",
       name: "title",
       message: "What is the title of your project?",
-    },
-    {
+    }, {
+      type: "input",
+      name: "discription",
+      message: "Describe your application.",
+    },{
       type: "input",
       name: "installation",
       message: "What command should be run to install dependencies?",
@@ -44,9 +47,27 @@ questions
     },
 
   ]).then((answers) => {
-    const generated = ''
+    const generated = `
+# ${answers.title}
+    
+## Description
+${answers.description}
+
+## Table of Contents
+- [Usage](#Usage)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Contributing](#Contributing)
+- [Tests](#Tests)
+- [License](#License)
+- [Questions](#Questions)
 
 
+    `;
+
+    fs.writeFile('README.md', generated, (err) => err ? console.log(err) : console.log('README.md Created!')
+
+    );
   })
   .catch((error) => {
     if (error.isTtyError) {
