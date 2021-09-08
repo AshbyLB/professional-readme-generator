@@ -51,7 +51,7 @@ questions
 # ${answers.title}
     
 ## Description
-${answers.description}
+${answers.discription}
 
 ## Table of Contents
 - [Usage](#Usage)
@@ -62,17 +62,33 @@ ${answers.description}
 - [License](#License)
 - [Questions](#Questions)
 
+## Usage
+${answers.usage}
+
+## Installation
+${answers.installation}
+
+## Contributing 
+${answers.contributing}
+
+## Tests
+${answers.test}
+
+## License
+${answers.license}
+
+## Questions
+[Link to GitHub Profile](https://github.com/${answers.gitHub})
+Feel free to email me at ${answers.email} if you have any questions.
+
 
     `;
-
     fs.writeFile('README.md', generated, (err) => err ? console.log(err) : console.log('README.md Created!')
 
     );
   })
   .catch((error) => {
-    if (error.isTtyError) {
-      // Prompt couldn't be rendered in the current environment
-    } else {
-      // Something else went wrong
+    if (error) {
+      console.log(error);
     }
   });
