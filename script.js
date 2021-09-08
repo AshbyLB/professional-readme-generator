@@ -1,4 +1,4 @@
-var questions = require('inquirer');
+const questions = require('inquirer');
 questions
   .prompt([
     {
@@ -11,12 +11,7 @@ questions
         name: "age",
         message:"What is your age?",
     },
-    {
-        type: "list",
-        name: "soda",
-        message:"What is your favorite soda?",
-        choices: ["Pepsi", "Coke", "Sprite"]
-    }
+  
   ])
   .then((answers) => {
     let greeting = `Hello my name is ${answers.name}. I am ${answers.age}! Your fav soda is ${answers.soda}`
