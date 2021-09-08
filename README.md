@@ -1,8 +1,8 @@
 
-# LALA
+# Yo Mama
     
 ## Description
-Fun
+no
 
 ## Table of Contents
 - [Usage](#Usage)
@@ -14,22 +14,22 @@ Fun
 - [Questions](#Questions)
 
 ## Usage
-dont
+you dont
 
 ## Installation
-none
+How should I know?
 
 ## Contributing 
-nothing
+they cant 
 
 ## Tests
-none
+RUN TESTS
 
 ## License
 MIT
 
 ## Questions
-[Link to GitHub Profile](https://github.com/AshbyLb)
+[Link to GitHub Profile](https://github.com/AshbyLB)<br/>
 Feel free to email me at ashbyleeblakely@gmail.com if you have any questions.
 
 
