@@ -79,6 +79,7 @@ ${answers.license}
 
 ## Questions
 [Link to GitHub Profile](https://github.com/${answers.gitHub})
+
 Feel free to email me at ${answers.email} if you have any questions.
 
 
