@@ -1,3 +1,4 @@
+const fs = require('fs');
 const questions = require('inquirer');
 questions
   .prompt([
@@ -9,7 +10,7 @@ questions
     {
       type: "input",
       name: "installation",
-      message: "How do you install your applicaton?",
+      message: "What command should be run to install dependencies?",
     },
     {
       type: "input",
@@ -19,24 +20,33 @@ questions
       type: "input",
       name: "credits",
       message: "Who are the people that contributed to this project?",
-    },{
+    }, {
+      type: "input",
+      name: "contributing",
+      message: "What do users need to know about adding a contribution your project?",
+    }, {
       type: "input",
       name: "test",
-      message:"Please provide how the project can be tested.",
-  },{
-    type: "input",
-    name: "gitHub",
-    message:"Please add your GitHub profile link.",
-},{
-  type: "input",
-  name: "email",
-  message:"Please provide your email address.",
-},
+      message: "What command should be used to run tests?",
+    }, {
+      type: "rawlist",
+      name: "license",
+      message: "Select the License for your application.",
+      choices: ['MIT', 'MPL 2.0', 'Zlib']
+    }, {
+      type: "input",
+      name: "gitHub",
+      message: "Please add your GitHub profile link.",
+    }, {
+      type: "input",
+      name: "email",
+      message: "Please provide your email address.",
+    },
 
-  ])
-  .then((answers) => {
-    let greeting = `Hello my name is ${answers.name}. I am ${answers.age}! Your fav soda is ${answers.soda}`
-    console.log(greeting);
+  ]).then((answers) => {
+    const generated = ''
+
+
   })
   .catch((error) => {
     if (error.isTtyError) {
