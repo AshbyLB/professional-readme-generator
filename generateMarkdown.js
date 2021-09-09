@@ -23,7 +23,7 @@ function generateMarkdown(answers) {
   - [Usage](#Usage)
   - [Contributing](#Contributing)
   - [Tests](#Tests)
-  - [License](#License)
+  - [License](#License)23
   - [Questions](#Questions)
   
   ## Usage
