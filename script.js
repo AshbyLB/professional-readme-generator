@@ -1,36 +1,42 @@
 const fs = require('fs');
-const questions = require('inquirer');
-questions
-  .prompt([
+const inquirer = require('inquirer');
+inquirer.prompt([
     {
       type: "input",
       name: "title",
       message: "What is the title of your project?",
+      validate: (input) => !!input,
     }, {
       type: "input",
       name: "discription",
       message: "Describe your application.",
+      validate: (input) => !!input,
     },{
       type: "input",
       name: "installation",
       message: "What command should be run to install dependencies?",
+      validate: (input) => !!input,
     },
     {
       type: "input",
       name: "usage",
       message: "How do you use this application?",
+      validate: (input) => !!input,
     }, {
       type: "input",
       name: "credits",
       message: "Who are the people that contributed to this project?",
+      validate: (input) => !!input,
     }, {
       type: "input",
       name: "contributing",
       message: "What do users need to know about adding a contribution your project?",
+      validate: (input) => !!input,
     }, {
       type: "input",
       name: "test",
       message: "What command should be used to run tests?",
+      validate: (input) => !!input,
     }, {
       type: "rawlist",
       name: "license",
@@ -40,10 +46,12 @@ questions
       type: "input",
       name: "gitHub",
       message: "Please add your GitHub profile link.",
+      validate: (input) => !!input,
     }, {
       type: "input",
       name: "email",
       message: "Please provide your email address.",
+      validate: (input) => !!input,
     },
 
   ]).then((answers) => {
@@ -83,7 +91,11 @@ Feel free to email me at ${answers.email} if you have any questions.
 
 
     `;
-    fs.writeFile('README.md', generated, (err) => err ? console.log(err) : console.log('README.md Created!')
+
+    if (answers.license === 'MIT') {
+      return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+    }
+    fs.writeFile('GENERATED_README.md', generated, (err) => err ? console.log(err) : console.log('README.md Created!')
 
     );
   })

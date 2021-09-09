@@ -1,8 +1,8 @@
 
-# d
+# a
     
 ## Description
-d
+a
 
 ## Table of Contents
 - [Usage](#Usage)
@@ -14,23 +14,23 @@ d
 - [Questions](#Questions)
 
 ## Usage
-d
+a
 
 ## Installation
-d
+a
 
 ## Contributing 
-d
+a
 
 ## Tests
-d
+a
 
 ## License
-MIT
+MPL 2.0
 
 ## Questions
-[Link to GitHub Profile](https://github.com/d)<br/>
-Feel free to email me at d if you have any questions.
+[Link to GitHub Profile](https://github.com/)<br/>
+Feel free to email me at a if you have any questions.
 
 
     
