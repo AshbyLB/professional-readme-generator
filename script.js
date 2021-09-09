@@ -69,7 +69,7 @@ inquirer.prompt([
   },
 
 ]).then((answers) => {
-  
+
   fs.writeFile('GENERATED_README.md', genMar.generateMarkdown(answers), (err) => err ? console.log(err) : console.log('README.md Created!')
   );
 });

@@ -1,36 +1,33 @@
 
-# d
+# README Generator
     
 ## Description
-d
+Using prompts from the terminal, generate your own professional README.
 
 ## Table of Contents
 - [Usage](#Usage)
 - [Installation](#Installation)
 - [Usage](#Usage)
 - [Contributing](#Contributing)
-- [Tests](#Tests)
 - [License](#License)
 - [Questions](#Questions)
 
 ## Usage
-d
+You can use this program to quickly and effeciently creat a readme based on your feedback when prompted to respond to questions in the terminal. 
 
 ## Installation
-d
+In the program dir, use node to begin the program.  node scropt.js
 
 ## Contributing 
-d
+Ashby Blakely 
 
-## Tests
-d
 
 ## License
 MIT
 
 ## Questions
-[Link to GitHub Profile](https://github.com/d)<br/>
-Feel free to email me at d if you have any questions.
+[Link to GitHub Profile](https://github.com/AshbyLB)<br/>
+Feel free to email me at ashbyleeblakely@gmail.com if you have any questions.
 
 
     
