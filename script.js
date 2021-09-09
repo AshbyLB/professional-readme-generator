@@ -51,7 +51,8 @@ inquirer.prompt([
     choices: [
       'MIT',
       'MPL 2.0',
-      'Zlib'
+      'Zlib',
+      'none'
     ]
   },
   {
@@ -69,24 +70,6 @@ inquirer.prompt([
 
 ]).then((answers) => {
   
-  /*switch(expression) {
-    case 'MIT':
-       [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-       break; 
-    
-    case 'MPL 2.0':
-       [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
-       break; 
-
-    case 'Zlib':
-      [![License: Zlib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)](https://opensource.org/licenses/Zlib)
-        break;
-
-    default : // Optional
-       // Statements
- }*/
-
   fs.writeFile('GENERATED_README.md', genMar.generateMarkdown(answers), (err) => err ? console.log(err) : console.log('README.md Created!')
-
   );
 });
