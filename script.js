@@ -1,5 +1,6 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
+const generateMarkdown = require('./generateMarkdown');
 inquirer.prompt([
     {
       type: "input",
@@ -54,43 +55,7 @@ inquirer.prompt([
       validate: (input) => !!input,
     },
 
-  ]).then((answers) => {
-    const generated = `
-# ${answers.title}
-    
-## Description
-${answers.discription}
-
-## Table of Contents
-- [Usage](#Usage)
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [Contributing](#Contributing)
-- [Tests](#Tests)
-- [License](#License)
-- [Questions](#Questions)
-
-## Usage
-${answers.usage}
-
-## Installation
-${answers.installation}
-
-## Contributing 
-${answers.contributing}
-
-## Tests
-${answers.test}
-
-## License
-${answers.license}
-
-## Questions
-[Link to GitHub Profile](https://github.com/${answers.gitHub})<br/>
-Feel free to email me at ${answers.email} if you have any questions.
-
-
-    `;
+  ]).then(generateMarkdown);
 
     if (answers.license === 'MIT') {
       return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
