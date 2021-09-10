@@ -9,7 +9,7 @@ Using prompts from the terminal, generate your own professional README.
 - [Installation](#Installation)
 - [Usage](#Usage)
 - [Contributing](#Contributing)
-- [Video Walkthrough](#Video)
+- [Tutorial](#Tutorial)
 - [Screenshot](#Screenshot)
 - [License](#License)
 - [Questions](#Questions)
@@ -23,11 +23,13 @@ In the program dir, use node to begin the program.  node scropt.js
 ## Contributing 
 Ashby Blakely 
 
-## Video
-[Video Walkthrough](https://drive.google.com/file/d/1gOfQoAHWjeAoapernT9abKyR04-aOwxw/preview)
+## Tutorial
+[Video Walkthrough](https://drive.google.com/file/d/1gOfQoAHWjeAoapernT9abKyR04-aOwxw/view?usp=sharing)
 
 ## Screenshot
 ![screenshot](./assets/img/readme.JPG)
+---
+![screenshot](./assets/img/readmecommand.JPG)
 
 ## License
 MIT

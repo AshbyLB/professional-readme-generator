@@ -54,6 +54,7 @@ ${renderLicenseBadge(answers.license)}
   - [Usage](#Usage)
   - [Contributing](#Contributing)
   - [Tests](#Tests)
+  - [Credits](#Credits)
   - [License](#License)
   - [Questions](#Questions)
   
@@ -68,6 +69,9 @@ ${renderLicenseBadge(answers.license)}
   
 ## Tests
   ${answers.test}
+
+## Credits
+  ${answers.credits} 
   
   ${renderLicenseSection(answers.license)}
  
