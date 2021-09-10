@@ -4,17 +4,13 @@ function renderLicenseBadge(license) {
     case 'MIT':
       return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
 
-
     case 'MPL 2.0':
       return `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`;
-
 
     case 'Zlib':
       return `[![License: Zlib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)](https://opensource.org/licenses/Zlib)`;
 
-
     default: 'You did not pick a license';
-
   }
 }
 
@@ -23,17 +19,13 @@ function renderLicenseLink(license) {
     case 'MIT':
       return `https://opensource.org/licenses/MIT`;
 
-
     case 'MPL 2.0':
       return `https://opensource.org/licenses/MPL-2.0`;
-
 
     case 'Zlib':
       return `https://opensource.org/licenses/Zlib`;
 
-
     default: 'You did not pick a license';
-
   }
 };
 
