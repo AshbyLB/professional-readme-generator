@@ -32,7 +32,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license === 'MIT' || license === 'MPL 2.0' || license === 'Zlib') {
     return `## License<br/>
-  [Link to your ${license} license](${renderLicenseLink(license)})<br/> 
+  [Link to the ${license} license used](${renderLicenseLink(license)})<br/> 
   ${renderLicenseBadge(license)}`
   }
   else {
@@ -43,10 +43,12 @@ function renderLicenseSection(license) {
 function generateMarkdown(answers) {
   return `# ${answers.title}
     
-  ## Description
+${renderLicenseBadge(answers.license)}
+  
+## Description
   ${answers.discription}
   
-  ## Table of Contents
+## Table of Contents
   - [Usage](#Usage)
   - [Installation](#Installation)
   - [Usage](#Usage)
@@ -55,23 +57,23 @@ function generateMarkdown(answers) {
   - [License](#License)
   - [Questions](#Questions)
   
-  ## Usage
+## Usage
   ${answers.usage}
   
-  ## Installation
+## Installation
   ${answers.installation}
   
-  ## Contributing 
+## Contributing 
   ${answers.contributing}
   
-  ## Tests
+## Tests
   ${answers.test}
   
   ${renderLicenseSection(answers.license)}
  
-  ## Questions
+## Questions
   [Link to GitHub Profile](https://github.com/${answers.gitHub})<br/>
   Feel free to email me at ${answers.email} if you have any questions.
-`;
+`
 };
 module.exports = { generateMarkdown };
