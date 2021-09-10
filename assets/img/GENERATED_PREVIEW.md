@@ -1,9 +1,9 @@
-# asdf
+# README Generator
     
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
 ## Description
-  asdf
+  This is a professional README generator.
   
 ## Table of Contents
   - [Usage](#Usage)
@@ -15,21 +15,21 @@
   - [Questions](#Questions)
   
 ## Usage
-  asdf
+  Open the direcory for the generator.  Run node script.js from the terminal.
   
 ## Installation
-  asdf
+  n/a
   
 ## Contributing 
-  asdf
+  Conatact me with suggestions
   
 ## Tests
-  asdf
+  n/a
   
   ## License<br/>
   [Link to the MIT license used](https://opensource.org/licenses/MIT)<br/> 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
  
 ## Questions
-  [Link to GitHub Profile](https://github.com/asdf)<br/>
-  Feel free to email me at asdf if you have any questions.
+  [Link to GitHub Profile](https://github.com/AshbyLb)<br/>
+  Feel free to email me at ashbyleeblakely@gmail.com if you have any questions.
