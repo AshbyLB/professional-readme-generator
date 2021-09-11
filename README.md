@@ -27,7 +27,7 @@ Ashby Blakely
 [Video Walkthrough](https://drive.google.com/file/d/1gOfQoAHWjeAoapernT9abKyR04-aOwxw/view?usp=sharing)
 
 ## Screenshot
-![screenshot](./assets/img/readme.JPG)
+![screenshot](./assets/img/proreadme.JPG)
 ---
 ![screenshot](./assets/img/readmecommand.JPG)
 
